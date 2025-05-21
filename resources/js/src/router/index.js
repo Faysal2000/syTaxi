@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createMemoryHistory, createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
 
 const routes = [
@@ -21,6 +21,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createMemoryHistory(),
+  //history: createMemoryHistory(),
+  history:createWebHistory('/app'),
   routes,
 })
