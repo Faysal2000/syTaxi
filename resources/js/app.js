@@ -5,7 +5,7 @@ import { router } from './src/router';
 import App from './src/App.vue';
 
 
-
+import '../css/app.css'
 
 const app=createApp(App)
 

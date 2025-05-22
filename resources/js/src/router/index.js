@@ -1,4 +1,3 @@
-import { Component } from 'react'
 import { createMemoryHistory, createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
 
@@ -9,12 +8,12 @@ const routes = [
 {
     path:'/login',
     name:'login',
-    component:()=>import('../pages/LoginPage.vue'),
+    component:()=>import('../pages/auth/LoginPage.vue'),
 },
 {
     path:'/signup',
     name:'signup',
-    component:()=>import('../pages/SignUpPage.vue'),
+    component:()=>import('../pages/auth/SignUpPage.vue'),
 }
 
 
