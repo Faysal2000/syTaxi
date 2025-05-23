@@ -7,8 +7,8 @@ import { useLoginStore } from "../../stores/auth/login-store";
 
 
 
-function redirectToGoogle(){
-    window.location.href='/auth/redirect'
+function redirectToGoogle() {
+    window.location.href = '/auth/redirect'
 }
 
 const loginStore = useLoginStore();
@@ -19,6 +19,14 @@ onMounted(() => {
 });
 </script>
 <template>
+
+
+
+
+
+
+
+
     <div class="flex flex-row justify-between mt-40">
         <div></div>
         <div class="w-[300px]">
@@ -29,9 +37,7 @@ onMounted(() => {
             </keep-alive>
 
             <div class="flex">
-                <Router-link to="/signup" class="font-medium hover:underline"
-                    >Sign up ?</Router-link
-                >
+                <Router-link to="/signup" class="font-medium hover:underline">Sign up ?</Router-link>
             </div>
 
             <div class="flex mb-2">
@@ -39,12 +45,8 @@ onMounted(() => {
                 <div class="font-semibold">or</div>
                 <hr class="h-[1px] bg-black w-[48%] mt-3" />
             </div>
-            <button 
-
-            @click="redirectToGoogle"
-          
-                class="flex justify-center bg-gray-300 rounded-md py-2 px-2 gap-2 w-[100%]"
-            >
+            <button @click="redirectToGoogle"
+                class="flex justify-center bg-gray-300 rounded-md py-2 px-2 gap-2 w-[100%]">
                 <img :src="App.baseUrl + '/img/google.svg'" alt="logo" />
                 <span>Continue with Google</span>
             </button>
